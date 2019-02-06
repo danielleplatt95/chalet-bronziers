@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','HomeController@index');
 
-Route::post('/make-enquiry', 'EnquiryController@newEnquiry');
+Route::post('/make-enquiry', 'EnquiryController@create');
