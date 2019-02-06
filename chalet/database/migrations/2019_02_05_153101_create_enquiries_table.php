@@ -15,10 +15,7 @@ class CreateEnquiriesTable extends Migration
     {
         Schema::create('enquiries', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('email');
-            $table->string('contact_number');
+            $table->integer('user_id')->unsigned();
             $table->date('date_from');
             $table->date('date_to');
             $table->integer('number_of_adults');
