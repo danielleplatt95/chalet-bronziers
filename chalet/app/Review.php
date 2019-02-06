@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Enquiry extends Model
+class Review extends Model
 {
     public function user()
     {
