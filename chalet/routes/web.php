@@ -14,3 +14,5 @@
 Route::get('/','HomeController@index');
 
 Route::post('/make-enquiry', 'EnquiryController@create');
+Route::post('/message-us', 'MessageController@create');
+Route::post('/reviews/submit-review', 'ReviewController@create');
